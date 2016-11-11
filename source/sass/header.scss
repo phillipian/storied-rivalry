@@ -1,0 +1,35 @@
+header {
+  background: black url(../images/archives/AndoverExeter_1936.png) no-repeat center center;
+  background-size: cover;
+  // top: 60;
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100px);
+
+  .title {
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    bottom: 5vw;
+    left: 5vw;
+
+    h5, h1 {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 4px;
+    }
+
+    h1 {
+      word-spacing: 2px;
+    }
+
+    h5 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width : 640px) {
+
+
+}

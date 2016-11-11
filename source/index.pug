@@ -1,0 +1,37 @@
+extends ./includes/main.pug
+
+block vars
+  - var path='Home'
+
+block content
+  include articles/rivalry-in-making.pug
+
+  - var picture = 'sports/ae2015.png'
+  - var credit = 'Courtesy of Phillips Academy.'
+  - var caption = 'The 2015 Andover team celebrates a touchdown. Andover beat Exeter 29-14 for the team\'s third consecutive victory.'
+  include includes/banner.pug
+
+  include articles/football-tradition.pug
+
+  - var picture = 'sports/celkouh.bvf0004.jpg'
+  - var credit = 'C.Elkouh/The Phillipian'
+  - var caption = 'Blue Key Heads from the Class of 2016 lead the Andover section in cheers at last year\'s A/E Weekend at Exeter.'
+  include includes/banner.pug
+
+  include articles/blue-spirit.pug
+
+  - var picture = 'archives/AndoverExeter_1958_byTedPolumbaum.png'
+  - var caption = 'A vendor sells Andover and Exeter banners, amongst other tchotchke as Andover boys get ready to parade in 1958.'
+  include includes/banner.pug
+
+  include articles/tough-losses.pug
+
+  - var picture = 'archives/AndoverExeterFootball_Cheer_1958.png'
+  - var caption = '1958 Andover students cheer at a rally for Andover/Exeter Weekend.'
+  include includes/banner-bottom.pug
+
+  include articles/great-wins.pug
+
+block scripts
+
+  script(type='text/javascript', src='http://vjs.zencdn.net/5.12.6/video.js')
