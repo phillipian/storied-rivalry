@@ -10,9 +10,34 @@ block header
   - var image = 'sports/obrokaw.GVS.01.jpg'
   include includes/header.pug
 
+block social
+  - var title = 'The Phillipian: A/E Weekend 2016'
+  - var description = 'The run down on Andover fall teams heading into A/E Weekend.'
+
+  meta(charset='UTF-8')
+  meta(name='description', content=description)
+  meta(name='keywords', content='the phillipian, phillipian, phillips academy, andover, pa, student journalism, newspaper, data, state of the acadmy, andover, exeter, rivlary, football')
+  // Open Graph data
+  meta(property='og:url', content='http://nonsibipress.org/freshman-survey/')
+  meta(property='og:title', content=title)
+  meta(property='og:description', content=description)
+  meta(property='og:image', content='https://aeday.phillipian.net/assets/images/social/card-facebook-volleyball.png')
+  // Twitter data
+  meta(name='twitter:card', content='summary_large_image')
+  meta(name='twitter:site', content='@phillipian')
+  meta(name='twitter:title', content=title)
+  meta(name='twitter:description', content=description)
+  meta(name='twitter:image', content='https://aeday.phillipian.net/assets/images/social/card-twitter-volleyball.png')
+  // Google Plus data
+  meta(itemscope='', itemtype='https://schema.org/WebSite')
+  meta(itemprop='name', content=title)
+  meta(itemprop='description', content=description)
+  meta(itemprop='image', content='https://aeday.phillipian.net/assets/images/mark.png')
+
+
 block content
   include articles/hype-video.pug
-  
+
   include articles/gvs.pug
 
   - var picture = 'sports/amacaya.bvs.06.jpg'
