@@ -4,7 +4,7 @@ header {
   // top: 60;
   position: relative;
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
 
   .title {
     text-transform: uppercase;
@@ -24,7 +24,6 @@ header {
       padding: 7px 10px;
       color: white;
       margin-bottom: 10px;
-      max-width: 80%;
     }
 
     h5 {

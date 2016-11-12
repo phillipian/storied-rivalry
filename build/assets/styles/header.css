@@ -3,7 +3,7 @@ header {
   background-size: cover;
   position: relative;
   width: 100%;
-  height: calc(100vh - 100px); }
+  height: calc(100vh - 80px); }
   header .title {
     text-transform: uppercase;
     color: white;
@@ -18,8 +18,7 @@ header {
       background-color: black;
       padding: 7px 10px;
       color: white;
-      margin-bottom: 10px;
-      max-width: 80%; }
+      margin-bottom: 10px; }
     header .title h5 {
       font-size: 18px;
       font-weight: 500;
