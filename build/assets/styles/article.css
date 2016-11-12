@@ -5,10 +5,16 @@ article {
   margin-bottom: 75px;
   border-top: 2px solid black; }
   article:first-child {
-    margin: 25px 0 70px 0; }
+    margin: 25px 0 70px 0;
+    border-top: none; }
   article h3 {
     padding: 50px 0 30px 0;
     font-size: 35px; }
+  article h3 + h5 {
+    margin-top: -30px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 30px; }
   article p {
     margin-bottom: 20px;
     line-height: 22px;
@@ -49,6 +55,8 @@ article {
 @media only screen and (max-width: 640px) {
   .quote blockquote {
     width: 100% !important;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px;
+    font-size: 30px !important;
+    line-height: 35px !important; } }
 
 /*# sourceMappingURL=article.css.map */

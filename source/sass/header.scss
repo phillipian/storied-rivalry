@@ -1,5 +1,5 @@
 header {
-  background: black url(../images/archives/AndoverExeter_1936.png) no-repeat center center;
+  background: black no-repeat center center;
   background-size: cover;
   // top: 60;
   position: relative;
@@ -20,16 +20,33 @@ header {
 
     h1 {
       word-spacing: 2px;
+      background-color: black;
+      padding: 7px 10px;
+      color: white;
+      margin-bottom: 10px;
+      max-width: 80%;
     }
 
     h5 {
-      font-size: 20px;
-      margin-bottom: 15px;
+      font-size: 18px;
+      font-weight: 500;
+      background-color: black;
+      padding: 7px 10px;
+      display: table;
+
+      &:first-child {
+        padding-bottom: 0;
+      }
+
+      &:last-child {
+        padding-top: 0;
+      }
     }
   }
 }
 
 @media only screen and (max-width : 640px) {
-
-
+  header {
+    height: 50vh;
+  }
 }

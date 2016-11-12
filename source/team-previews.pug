@@ -1,0 +1,40 @@
+extends ./includes/main.pug
+
+block vars
+  - var path='2016 Weekend'
+
+block header
+  - var header1 = 'Andover / Exeter: 2016 Weekend'
+  - var sub1 = 'Phillipian Sports'
+  - var sub2 = 'Team Previews'
+  - var image = 'sports/obrokaw.GVS.01.jpg'
+  include includes/header.pug
+
+block content
+  include articles/gvs.pug
+
+  - var picture = 'sports/amacaya.bvs.06.jpg'
+  - var credit = 'A.Macaya/The Phillipian'
+  - var caption = ''
+  include includes/banner.pug
+  include articles/bvs.pug
+
+  - var picture = 'sports/trynne.gvvolley13.jpg'
+  - var credit = 'T.Rynne/The Phillipian'
+  - var caption = ''
+  include includes/banner.pug
+  include articles/gvvb.pug
+
+  - var picture = 'sports/trynne.stiffarm01.jpg'
+  - var credit = 'T.Rynne/The Phillipian'
+  - var caption = ''
+  include includes/banner.pug
+  include articles/bvf.pug
+
+  - var picture = 'sports/rkindangen.PAFH03.jpg'
+  - var credit = 'R.Kindangen/The Phillipian'
+  - var caption = ''
+  include includes/banner.pug
+  include articles/gfh.pug
+
+block scripts

@@ -21,7 +21,9 @@ section.banner {
     padding-right: 5px; }
 
 @media only screen and (max-width: 640px) {
-  section.banner .frame {
-    height: 300px; } }
+  section.banner {
+    padding-top: 10 !important; }
+    section.banner .frame {
+      height: 200px; } }
 
 /*# sourceMappingURL=banner.css.map */

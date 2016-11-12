@@ -2,13 +2,13 @@ doctype html5
 html(lang='en')
   block vars
   head
-    title A/E Day 2016: #{path}
+    title Andover/Exeter: #{path}
     block styles
     link(rel='stylesheet', href='assets/styles/main.css')
     link(rel='stylesheet', href='http://vjs.zencdn.net/5.12.6/video-js.css')
     meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
   body
-    include header.pug
+    block header
     .wrapper
       main
         block content

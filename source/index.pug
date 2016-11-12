@@ -1,11 +1,17 @@
 extends ./includes/main.pug
 
 block vars
-  - var path='Home'
+  - var path='A Storied Rivalry'
+
+block header
+  - var header1 = 'Andover / Exeter: A Storied Rivalry'
+  - var sub1 = 'By Eliza Bienstock &rsquo;18, Cedric Elkouh,'
+  - var sub2 = 'Rudd Fawcett &rsquo;18, &amp; Ally Klionksy  &rsquo;17'
+  - var image = 'archives/AndoverExeter_1936.png'
+  include includes/header.pug
 
 block content
   include articles/rivalry-in-making.pug
-
   - var picture = 'sports/ae2015.png'
   - var credit = 'Courtesy of Phillips Academy.'
   - var caption = 'The 2015 Andover team celebrates a touchdown. Andover beat Exeter 29-14 for the team\'s third consecutive victory.'
@@ -28,7 +34,7 @@ block content
 
   - var picture = 'archives/AndoverExeterFootball_Cheer_1958.png'
   - var caption = '1958 Andover students cheer at a rally for Andover/Exeter Weekend.'
-  include includes/banner-bottom.pug
+  include includes/banner.pug
 
   include articles/great-wins.pug
 

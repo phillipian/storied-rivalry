@@ -8,6 +8,26 @@ nav {
   background-color: black;// #021F42; //#F2F2F2;
   font-family: 'Lato', sans-serif;
 
+  a.menu {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background: url(../images/menu.svg) center center no-repeat;
+    background-size: 100%;
+    opacity: .7;
+    top: 15px;
+    right: 15px;
+    position: absolute;
+  }
+
+  h3 {
+    display: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    line-height: 60px;
+    margin-left: 15px;
+  }
+
   &.shadow {
     -webkit-box-shadow: 0 1px 15px 0px #bfbfbf;
     -moz-box-shadow: 0 1px 15px 0px #bfbfbf;
@@ -19,7 +39,7 @@ nav {
   }
 
   li {
-    width: 20%;
+    width: 25%;
     max-height: inherit;
     box-sizing: border-box;
     color: white;
@@ -31,6 +51,11 @@ nav {
     letter-spacing: 1.2px;
     overflow: auto;
 
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
     &:first-child {
       padding: 0;
     }
@@ -39,5 +64,40 @@ nav {
       margin: 15px auto;
       max-height: 30px;
     }
+  }
+}
+
+
+@media only screen and (max-width : 640px) {
+  nav {
+    height: 60px !important;
+  }
+
+  nav a.menu, nav h3 {
+    display: block;
+  }
+
+  nav ul, nav:active ul {
+    border-top: 1px dotted white;
+    display: none;
+    position: absolute;
+    background: rgba(black, 1);
+    top: 60px;
+    width: 100%;
+  }
+
+  nav ul li {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 0;
+  }
+
+  nav ul li:first-child {
+    display: none;
+  }
+
+  nav:hover ul {
+    display: block;
   }
 }
