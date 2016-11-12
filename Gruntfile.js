@@ -4,66 +4,66 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         // copy from the source directory to build
         copy: {
-            build: {
-                cwd: 'source',
-                src: [ '**', '!**/*.pug', '!sass', '!sass/*', '!**/*.scss', '!partials', '!partials/*', '!includes/*' ],
-                dest: 'build',
-                expand: true
-            },
+          build: {
+            cwd: 'source',
+            src: [ '**', '!**/*.pug', '!sass', '!sass/*', '!**/*.scss', '!partials', '!partials/*', '!includes/*' ],
+            dest: 'build',
+            expand: true
+          }
         },
         // clean the build directory
         clean: {
-            build: {
-                src: [ 'build' ]
-            },
+          build: {
+            src: [ 'build' ]
+          }
         },
         watch: {
-            sass: {
-                files: [ 'source/sass/*.scss', 'source/sass/*/*.scss' ],
-                tasks: [ 'sass' ]
-            },
-            pug: {
-                files: 'source/**/*.pug',
-                tasks: [ 'pug' ]
-            },
-            copy: {
-              files: [ 'source/**', '!source/**/*.scss', '!source/*.pug' ],
-              tasks: [ 'copy' ]
-            }
+          sass: {
+            files: [ 'source/sass/*.scss', 'source/sass/*/*.scss' ],
+            tasks: [ 'sass' ]
+          },
+          pug: {
+            files: 'source/**/*.pug',
+            tasks: [ 'pug' ]
+          },
+          copy: {
+            files: [ 'source/**', '!source/**/*.scss', '!source/*.pug' ],
+            tasks: [ 'copy' ]
+          }
         },
         pug: {
-            compile: {
-                options: {
-                    data: {}
-                },
-                files: [{
-                    expand: true,
-                    cwd: 'source',
-                    src: [ '**/*.pug' ],
-                    dest: 'build',
-                    ext: '.html'
-                }]
-            }
+          compile: {
+            options: {
+              data: {}
+            },
+            files: [{
+              expand: true,
+              cwd: 'source',
+              src: [ '**/*.pug' ],
+              dest: 'build',
+              ext: '.html'
+            }]
+          }
         },
         sass: {
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: 'source/sass',
-                    src: [ '*.scss' ],
-                    dest: 'build/assets/styles',
-                    ext: '.css'
-                }]
-            }
+          dist: {
+            files: [{
+              expand: true,
+              cwd: 'source/sass',
+              src: [ '*.scss' ],
+              dest: 'build/assets/styles',
+              ext: '.css'
+            }]
+          }
         },
         connect: {
-            server: {
-                options: {
-                    port: 4000,
-                    base: 'build',
-                    hostname: '*'
-                }
+          server: {
+            options: {
+              port: 4000,
+              base: 'build',
+              hostname: '*'
             }
+          }
         }
     });
 
@@ -79,7 +79,8 @@ module.exports = function(grunt) {
 
     grunt.registerTask(
       'build',
-      [ 'clean', 'copy', 'pug', 'sass' ]
+      // [ 'clean', 'copy', 'pug', 'sass' ]
+      [ 'copy', 'pug', 'sass' ]
     );
 
     grunt.registerTask(

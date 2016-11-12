@@ -4,7 +4,7 @@ header {
   // top: 60;
   position: relative;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: 60vh;
 
   .title {
     text-transform: uppercase;
@@ -12,6 +12,7 @@ header {
     position: absolute;
     bottom: 5vw;
     left: 5vw;
+    right: 5vw;
 
     h5, h1 {
       font-family: 'Lato', sans-serif;
@@ -24,6 +25,7 @@ header {
       padding: 7px 10px;
       color: white;
       margin-bottom: 10px;
+      display: table;
     }
 
     h5 {

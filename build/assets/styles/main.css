@@ -47,6 +47,10 @@ nav {
   z-index: 999;
   background-color: black;
   font-family: 'Lato', sans-serif; }
+  nav img {
+    display: none;
+    margin: 15px auto;
+    max-height: 30px; }
   nav a.menu {
     display: none;
     width: 30px;
@@ -89,15 +93,24 @@ nav {
     nav li:first-child {
       padding: 0; }
     nav li img {
+      display: block;
       margin: 15px auto;
       max-height: 30px; }
 
 @media only screen and (max-width: 640px) {
   nav {
     height: 60px !important; }
+    nav img {
+      display: inline-block;
+      margin-left: 15px; }
 
-  nav a.menu, nav h3 {
+  nav a.menu {
     display: block; }
+
+  nav h3 {
+    display: inline-block;
+    top: 0;
+    position: absolute; }
 
   nav ul, nav:active ul {
     border-top: 1px dotted white;
@@ -123,13 +136,14 @@ header {
   background-size: cover;
   position: relative;
   width: 100%;
-  height: calc(100vh - 80px); }
+  height: 60vh; }
   header .title {
     text-transform: uppercase;
     color: white;
     position: absolute;
     bottom: 5vw;
-    left: 5vw; }
+    left: 5vw;
+    right: 5vw; }
     header .title h5, header .title h1 {
       font-family: 'Lato', sans-serif;
       letter-spacing: 4px; }
@@ -138,7 +152,8 @@ header {
       background-color: black;
       padding: 7px 10px;
       color: white;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      display: table; }
     header .title h5 {
       font-size: 18px;
       font-weight: 500;
@@ -324,7 +339,7 @@ article {
     .photos div:first-child {
       margin-bottom: 20px; } }
 footer {
-  height: 80px;
+  height: 60px;
   max-height: 80px;
   width: 100%;
   box-sizing: border-box;
@@ -341,7 +356,8 @@ footer {
     box-shadow: 0 1px -10px 1px rgba(0, 0, 0, 0.2);
     border: none; }
   footer h3 {
-    line-height: 80px;
+    line-height: 60px;
+    font-size: 16px;
     color: white;
     font-family: 'Lato', sans-serif;
     font-weight: 300;

@@ -8,6 +8,12 @@ nav {
   background-color: black;// #021F42; //#F2F2F2;
   font-family: 'Lato', sans-serif;
 
+  img {
+    display: none;
+    margin: 15px auto;
+    max-height: 30px;
+  }
+
   a.menu {
     display: none;
     width: 30px;
@@ -61,6 +67,7 @@ nav {
     }
 
     img {
+      display: block;
       margin: 15px auto;
       max-height: 30px;
     }
@@ -71,10 +78,21 @@ nav {
 @media only screen and (max-width : 640px) {
   nav {
     height: 60px !important;
+
+    img {
+      display: inline-block;
+      margin-left: 15px;
+    }
   }
 
-  nav a.menu, nav h3 {
+  nav a.menu {
     display: block;
+  }
+
+  nav h3 {
+    display: inline-block;
+    top: 0;
+    position: absolute;;
   }
 
   nav ul, nav:active ul {

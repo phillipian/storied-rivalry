@@ -7,6 +7,10 @@ nav {
   z-index: 999;
   background-color: black;
   font-family: 'Lato', sans-serif; }
+  nav img {
+    display: none;
+    margin: 15px auto;
+    max-height: 30px; }
   nav a.menu {
     display: none;
     width: 30px;
@@ -49,15 +53,24 @@ nav {
     nav li:first-child {
       padding: 0; }
     nav li img {
+      display: block;
       margin: 15px auto;
       max-height: 30px; }
 
 @media only screen and (max-width: 640px) {
   nav {
     height: 60px !important; }
+    nav img {
+      display: inline-block;
+      margin-left: 15px; }
 
-  nav a.menu, nav h3 {
+  nav a.menu {
     display: block; }
+
+  nav h3 {
+    display: inline-block;
+    top: 0;
+    position: absolute; }
 
   nav ul, nav:active ul {
     border-top: 1px dotted white;
