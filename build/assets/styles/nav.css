@@ -70,7 +70,8 @@ nav {
   nav h3 {
     display: inline-block;
     top: 0;
-    position: absolute; }
+    position: absolute;
+    left: 50px; }
 
   nav ul, nav:active ul {
     border-top: 1px dotted white;
