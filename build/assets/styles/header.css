@@ -32,6 +32,15 @@ header {
 
 @media only screen and (max-width: 640px) {
   header {
-    height: 50vh; } }
+    margin-top: 60px;
+    height: 50vh; }
+    header .title {
+      bottom: 5vw;
+      width: 80%;
+      margin: 0 auto; }
+      header .title h1 {
+        font-size: 20px; }
+      header .title h5 {
+        font-size: 14px; } }
 
 /*# sourceMappingURL=header.css.map */

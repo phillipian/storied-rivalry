@@ -152,7 +152,16 @@ header {
 
 @media only screen and (max-width: 640px) {
   header {
-    height: 50vh; } }
+    margin-top: 60px;
+    height: 50vh; }
+    header .title {
+      bottom: 5vw;
+      width: 80%;
+      margin: 0 auto; }
+      header .title h1 {
+        font-size: 20px; }
+      header .title h5 {
+        font-size: 14px; } }
 section.banner {
   padding-top: 30px;
   border-top: 10px solid black;
@@ -343,5 +352,12 @@ footer {
       text-decoration: none;
       color: white;
       border-bottom: 1px solid white; }
+
+@media only screen and (max-width: 640px) {
+  footer {
+    height: 40px; }
+    footer h3 {
+      line-height: 40px;
+      font-size: 14px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -34,3 +34,14 @@ footer {
     }
   }
 }
+
+@media only screen and (max-width : 640px) {
+  footer {
+    height: 40px;
+
+    h3 {
+      line-height: 40px;
+      font-size: 14px;
+    }
+  }
+}

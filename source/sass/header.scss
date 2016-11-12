@@ -46,6 +46,21 @@ header {
 
 @media only screen and (max-width : 640px) {
   header {
+    margin-top: 60px;
     height: 50vh;
+
+    .title {
+      bottom: 5vw;
+      width: 80%;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 20px;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+    }
   }
 }

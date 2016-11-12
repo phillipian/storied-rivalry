@@ -1,0 +1,67 @@
+extends ./includes/main.pug
+
+block vars
+  - var path='A Storied Rivalry'
+
+block header
+  - var header1 = 'Andover / Exeter: A Storied Rivalry'
+  - var sub1 = 'By Eliza Bienstock &rsquo;18, Cedric Elkouh,'
+  - var sub2 = 'Rudd Fawcett &rsquo;18, &amp; Ally Klionksy  &rsquo;17'
+  - var image = 'archives/AndoverExeter_1936.png'
+  include includes/header.pug
+
+block social
+  - var title = 'The Phillipian: A Storied Rivalry'
+  - var description = 'In 1878, a legendary rivalry between Andover and Exeter was born.'
+
+  meta(charset='UTF-8')
+  meta(name='description', content=description)
+  meta(name='keywords', content='the phillipian, phillipian, phillips academy, andover, pa, student journalism, newspaper, data, state of the acadmy, andover, exeter, rivlary, football')
+  // Open Graph data
+  meta(property='og:url', content='http://nonsibipress.org/freshman-survey/')
+  meta(property='og:title', content=title)
+  meta(property='og:description', content=description)
+  meta(property='og:image', content='https://aeday.phillipian.net/assets/images/social/card-facebook.png')
+  // Twitter data
+  meta(name='twitter:card', content='summary_large_image')
+  meta(name='twitter:site', content='@phillipian')
+  meta(name='twitter:title', content=title)
+  meta(name='twitter:description', content=description)
+  meta(name='twitter:image', content='https://aeday.phillipian.net/assets/images/social/card-twitter.png')
+  // Google Plus data
+  meta(itemscope='', itemtype='https://schema.org/WebSite')
+  meta(itemprop='name', content=title)
+  meta(itemprop='description', content=description)
+  meta(itemprop='image', content='https://aeday.phillipian.net/assets/images/images/mark.png')
+
+block content
+  include articles/rivalry-in-making.pug
+  - var picture = 'sports/ae2015.png'
+  - var credit = 'Courtesy of Phillips Academy.'
+  - var caption = 'The 2015 Andover team celebrates a touchdown. Andover beat Exeter 29-14 for the team\'s third consecutive victory.'
+  include includes/banner.pug
+
+  include articles/football-tradition.pug
+
+  - var picture = 'sports/celkouh.bvf0004.jpg'
+  - var credit = 'C.Elkouh/The Phillipian'
+  - var caption = 'Blue Key Heads from the Class of 2016 lead the Andover section in cheers at last year\'s A/E Weekend at Exeter.'
+  include includes/banner.pug
+
+  include articles/blue-spirit.pug
+
+  - var picture = 'archives/AndoverExeter_1958_byTedPolumbaum.png'
+  - var caption = 'A vendor sells Andover and Exeter banners, amongst other tchotchke as Andover boys get ready to parade in 1958.'
+  include includes/banner.pug
+
+  include articles/tough-losses.pug
+
+  - var picture = 'archives/AndoverExeterFootball_Cheer_1958.png'
+  - var caption = '1958 Andover students cheer at a rally for Andover/Exeter Weekend.'
+  include includes/banner.pug
+
+  include articles/great-wins.pug
+
+block scripts
+
+  script(type='text/javascript', src='http://vjs.zencdn.net/5.12.6/video.js')

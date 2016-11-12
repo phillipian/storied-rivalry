@@ -28,4 +28,11 @@ footer {
       color: white;
       border-bottom: 1px solid white; }
 
+@media only screen and (max-width: 640px) {
+  footer {
+    height: 40px; }
+    footer h3 {
+      line-height: 40px;
+      font-size: 14px; } }
+
 /*# sourceMappingURL=footer.css.map */
