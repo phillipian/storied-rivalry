@@ -97,7 +97,7 @@ nav {
     display: none;
   }
 
-  nav:hover ul {
+  nav:hover ul, nav a.menu:hover ul, nav a.menu:active ul {
     display: block;
   }
 }

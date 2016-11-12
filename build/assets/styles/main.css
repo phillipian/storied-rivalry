@@ -116,7 +116,7 @@ nav {
   nav ul li:first-child {
     display: none; }
 
-  nav:hover ul {
+  nav:hover ul, nav a.menu:hover ul, nav a.menu:active ul {
     display: block; } }
 header {
   background: black no-repeat center center;
@@ -152,7 +152,7 @@ header {
 
 @media only screen and (max-width: 640px) {
   header {
-    margin-top: 60px;
+    margin-top: 30px;
     height: 50vh; }
     header .title {
       bottom: 5vw;
